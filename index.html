@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBamboo Music</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #222;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            border: 1px solid white;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #444;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #222;
+            border: 1px solid white;
+            z-index: 100;
+            border-radius: 5px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-bottom: 1px solid white;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background: url('xbamboo.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+            color: #ff9900;
+        }
+
+        .hero p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .content-section {
+            padding: 40px 20px;
+        }
+
+        .latest-release {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .latest-release img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .latest-release h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .latest-release a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .latest-release a:hover {
+            background-color: #e68a00;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menu = document.querySelector(".menu");
+
+            menuIcon.addEventListener("click", () => {
+                menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">XBAMBOO MUSIC</div>
+        <div class="menu-icon">&#9776;</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="music.html">Music</a>
+            <a href="#">Videos</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>OBWESIGWA FINALLY OUT</h1>
+    </div>
+
+    <div class="content-section">
+        <div class="latest-release">
+            <h2>MUSIC</h2>
+            <img src="obwesigwa.jpg" alt="Latest Release">
+            <p>LATEST RELEASE</p>
+            <h2>OBWESIGWA OFFICIAL AUDIO</h2>
+            <a href="music.html">STREAM/DOWNLOAD</a>
+        </div>
+        <div class="latest-release">
+            <h2>MUSIC</h2>
+            <img src="./images/okambihabiha.jpg" alt="Latest Release">
+            <p>MORE OF XBAMBOO</p>
+            <h2>OKAMBIHABIHA</h2>
+            <a href="music.html">STREAM/DOWNLOAD</a>
+        </div>
+        <div class="latest-release">
+            <h2>MUSIC</h2>
+            <img src="akasente.jpg" alt="Latest Release">
+            <p>LATEST RELEASE</p>
+            <h2>AKASENTE MP3</h2>
+            <a href="music.html">STREAM/DOWNLOAD</a>
+        </div>
+        <div class="latest-release">
+            <h2>MUSIC</h2>
+            <img src="./images/ekintu.jpg" alt="Latest Release">
+            <p>LATEST RELEASE</p>
+            <h2>EKINTU MP3</h2>
+            <a href="music.html">STREAM/DOWNLOAD</a>
+        </div>
+    </div>
+    <div class="latest-release">
+    
+    <div class="button-container">
+        <p class="music-description">Discover more songs from XBamboo. Explore our full music catalog and enjoy new releases!</p>
+        <a href="music.html" class="listen-button">LISTEN NOW</a>
+    </div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 XBamboo Music. Designed by <a href="#">Godwin Gates Web Designs</a>.</p>
+        <p>
+            <a href="#">Home</a>
+            <a href="music.html">Music</a>
+            <a href="#">Videos</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </p>
+    </footer>
+</body>
+</html>

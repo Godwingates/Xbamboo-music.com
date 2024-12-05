@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBamboo Music - Music Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 20px;
+        }
+        .latest-release {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+          .latest-release a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .latest-release a:hover {
+            background-color: #e68a00;
+        }
+
+        .song {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .song img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .song-details {
+            flex: 1;
+        }
+
+        .song-details h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #ff9900;
+        }
+
+        .song-details audio {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .song-actions{
+            margin-left: 7px;
+            bottom: 5px;
+        }
+
+        .song-actions a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .song-actions a:hover {
+            background-color: #e68a00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #222;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">XBAMBOO MUSIC</div>
+    </header>
+
+    <div class="hero">
+        <h1>Music Collection</h1>
+        <p>Stream and download your favorite songs!</p>
+    </div>
+
+    <div class="content-section">
+        <div class="song">
+            <img src="obwesigwa.jpg" alt="Song Cover">
+            <div class="song-details">
+                <h3>OBWESIGWA</h3>
+                <audio controls>
+                    <source src="./audio/Obwesigwa-Xbamboo.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="song-actions">
+                <a href="./audio/Obwesigwa-Xbamboo.mp3" download>Download</a>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="./images/akasente.jpg" alt="Song Cover">
+            <div class="song-details">
+                <h3>AKASENTE</h3>
+                <audio controls>
+                    <source src="./audio/Akasente_by_Xbamboo_4k_Video_Visualizer(256k).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="song-actions">
+                <a href="./audio/Akasente_by_Xbamboo_4k_Video_Visualizer(256k).mp3" download>Download</a>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="./images/okambihabiha.jpg" alt="Song Cover">
+            <div class="song-details">
+                <h3>OKAMBIHABIHA</h3>
+                <audio controls>
+                    <source src="./audio/Okambihabiiha -Xbamboo-(new Ugandan music 2024,).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="song-actions">
+                <a href="./audio/Okambihabiiha -Xbamboo-(new Ugandan music 2024,).mp3" download>Download</a>
+            </div>
+           </div>
+        <div class="song">
+            <img src="./images/ekintu.jpg" alt="Song Cover">
+            <div class="song-details">
+                <h3>EKINTU</h3>
+                <audio controls>
+                    <source src="./audio/Ekintu_by_Xbamboo_ft_Joe_Buttonz_Latest_Ugandan_Best_New_Music_2023_Official_4K_HD_Dancehall_Video_(256k) (1).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="song-actions">
+                <a href="./audio/Ekintu_by_Xbamboo_ft_Joe_Buttonz_Latest_Ugandan_Best_New_Music_2023_Official_4K_HD_Dancehall_Video_(256k) (1).mp3" download>Download</a>
+            </div>
+            </div>
+            <div class="song">
+            <img src="./images/madina.jpg" alt="Song Cover">
+            <div class="song-details">
+                <h3>MADINA</h3>
+                <audio controls>
+                    <source src="./audio/Madina_by_xbamboo__official_video_full_HD_(256k).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="song-actions">
+                <a href="./audio/Madina_by_xbamboo__official_video_full_HD_(256k).mp3" download>Download</a>
+            </div>
+            
+    </div>
+    <div class="latest-release">
+    <div class="button-container">
+        <p class="music-description">Reach out to XBamboo on all his social media platforms and contact him for hire or performance on your function and parties </p>
+        <a href="contact.html" class="listen-button">CONTACT US</a>
+    </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 Godwin Gates Web Designs</p>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+             <a href="about.html">About us</a>
+        </p>
+    </footer>
+</body>
+</html>
